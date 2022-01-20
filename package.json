@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "start": "lerna exec yarn start ",
+    "format": "lerna exec yarn format",
+    "lint": "lerna exec yarn lint",
+    "build": "lerna exec yarn build",
+    "build:webpack": "lerna exec build:webpack",
+    "build:types": "lerna exec build:types",
+    "test": "lerna exec yarn test",
+    "check-format": "lerna exec yarn test"
+  }
+}
